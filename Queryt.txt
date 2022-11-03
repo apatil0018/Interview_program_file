@@ -1,0 +1,7 @@
+SELECT salesman_id "ID",name,"Salesman"
+FROM salesman
+WHERE city="London"
+UNION
+(SELECT customer_id "ID",cust_name,"Customer")
+FROM customer
+WHERE city="London")
